@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Habitus.LoginPage"
+    BackgroundColor="#F5F5F5"
+    Title="Crear Cuenta">
+
+    <Grid RowDefinitions="*">
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout
+                Padding="30,20,30,20"
+                Spacing="10">
+
+                <!-- Título debajo del encabezado -->
+                <Label
+                    Text="Habitus"
+                    FontFamily="ZenDots-Regular.ttf"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="#2d2d2d"/>
+
+                <!-- Logo central grande -->
+                <Image
+                    Source="logo.png"
+                    Aspect="AspectFit"
+                    HeightRequest="120"
+                    HorizontalOptions="Center"/>
+
+                <!-- Subtítulo -->
+                <Label
+                    Text="Crear cuenta"
+                    FontSize="22"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="#2d2d2d"/>
+
+                <Label
+                    Text="Ingresa tu correo electrónico para ingresar"
+                    FontSize="14"
+                    HorizontalOptions="Center"
+                    TextColor="#888888"/>
+
+                <!-- Campos de entrada -->
+                <Entry
+                    x:Name="EmailEntry"
+                    Placeholder="email@domain.com"
+                    Keyboard="Email"
+                    TextColor="Black"
+                    BackgroundColor="#F5F5F5"
+                    PlaceholderColor="#AAAAAA"
+                    HeightRequest="50"/>
+
+
+                <Entry
+                    x:Name="PasswordEntry"
+                    Placeholder="password"
+                    IsPassword="True"
+                    TextColor="Black"
+                    BackgroundColor="#F5F5F5"
+                    PlaceholderColor="#AAAAAA"
+                    HeightRequest="50"/>
+
+                <!-- Botón Continuar -->
+                <Button
+                    x:Name="LoginButton"
+                    Text="Continuar"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    Clicked="OnLoginClicked"/>
+
+                <!-- Link crear cuenta -->
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label Text="¿No tienes cuenta? " TextColor="#2d2d2d"/>
+                    <Label Text="Crea una aquí"
+                           TextColor="#2d2d2d"
+                           FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+
+                <!-- Separador -->
+                <Grid Margin="0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="#D3D3D3" HeightRequest="1" VerticalOptions="Center"/>
+                    <Label Text="o" Grid.Column="1" HorizontalOptions="Center" Padding="10,0"/>
+                    <BoxView Color="#D3D3D3" HeightRequest="1" Grid.Column="2" VerticalOptions="Center"/>
+                </Grid>
+
+                <!-- Botones proveedores con icono -->
+                <Button
+                    Text="Continuar con Google"
+                    ImageSource="google.png"
+                    ContentLayout="Left,10"
+                    BackgroundColor="White"
+                    BorderColor="#DDDDDD"
+                    BorderWidth="1"
+                    TextColor="#2d2d2d"
+                    FontAttributes="Bold"
+                    HeightRequest="50"/>
+
+                <Button
+                    Text="Continuar con Microsoft"
+                    ImageSource="microsoft.png"
+                    ContentLayout="Left,10"
+                    BackgroundColor="White"
+                    BorderColor="#DDDDDD"
+                    BorderWidth="1"
+                    TextColor="#2d2d2d"
+                    FontAttributes="Bold"
+                    HeightRequest="50"/>
+                
+                <Button
+                    Text="Continuar con Apple"
+                    ImageSource="apple.png"
+                    ContentLayout="Left,10"
+                    BackgroundColor="White"
+                    BorderColor="#DDDDDD"
+                    BorderWidth="1"
+                    TextColor="#2d2d2d"
+                    FontAttributes="Bold"
+                    HeightRequest="50"/>
+
+                <!-- Pie con términos -->
+                <Label
+                    Text="Al hacer clic en continuar, acepta nuestros Términos de servicio y Política de privacidad."
+                    FontSize="12"
+                    TextColor="#888888"
+                    HorizontalTextAlignment="Center"
+                    Margin="0,20,0,0"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Habitus.MisHabitosPage"
+    BackgroundColor="#f5f5f5"
+    Title="Mis hábitos">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Avatar usuario -->
+            <HorizontalStackLayout Padding="20,40,20,10"
+                                   HorizontalOptions="End"
+                                   Spacing="5">
+                <Image Source="avatar.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       VerticalOptions="Center"/>
+                <Label Text="Juan Litterini"
+                       FontSize="14"
+                       TextColor="Black"
+                       VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <!-- Opciones -->
+            <ScrollView Grid.Row="1">
+                <VerticalStackLayout Padding="30,20"
+                         Spacing="20"
+                         VerticalOptions="Start">
+
+                    <!-- Card: Alimentación -->
+                    <Frame CornerRadius="20"
+               Padding="10"
+               HasShadow="True"
+               BackgroundColor="White">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ImageButton
+                    Source="dieta.png"
+                    BackgroundColor="Transparent"
+                    HeightRequest="80"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"/>
+
+
+                            <Label Text="Alimentación"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       FontFamily="ZenDots-Regular.ttf"
+                       TextColor="Black"
+                       HorizontalOptions="Start"/>
+
+                        </Grid>
+                    </Frame>
+
+                    <!-- Card: Entrenamiento -->
+                    <Frame CornerRadius="20"
+               Padding="10"
+               HasShadow="True"
+               BackgroundColor="White">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ImageButton
+                    Source="entrenamiento.png"
+                    BackgroundColor="Transparent"
+                    HeightRequest="80"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"/>
+
+                            <Label Text="Entrenamiento"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       FontFamily="ZenDots-Regular.ttf"
+                       TextColor="Black"
+                       HorizontalOptions="Start"/>
+
+
+                        </Grid>
+                    </Frame>
+
+                    <!-- Card: Metas -->
+                    <Frame CornerRadius="20"
+               Padding="10"
+               HasShadow="True"
+               BackgroundColor="White">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ImageButton
+                    Source="cuaderno.png"
+                    BackgroundColor="Transparent"
+                    HeightRequest="80"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"/>
+
+                            <Label Text="Metas"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       FontFamily="ZenDots-Regular.ttf"
+                       TextColor="Black"
+                       HorizontalOptions="Start"/>
+
+                        </Grid>
+                    </Frame>
+
+                    <!-- Card: Sueño -->
+                    <Frame CornerRadius="20"
+               Padding="10"
+               HasShadow="True"
+               BackgroundColor="White">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ImageButton
+                    Source="sueno.png"
+                    BackgroundColor="Transparent"
+                    HeightRequest="80"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"/>
+
+                            <Label Text="Sueño"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       FontFamily="ZenDots-Regular.ttf"
+                       TextColor="Black"
+                       HorizontalOptions="Start"/>
+
+                        </Grid>
+                    </Frame>
+
+                    <!-- Card: Calendario -->
+                    <Frame CornerRadius="20"
+               Padding="10"
+               HasShadow="True"
+               BackgroundColor="White">
+                        <Grid ColumnSpacing="20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <ImageButton
+                    Source="calendario.png"
+                    BackgroundColor="Transparent"
+                    HeightRequest="80"
+                    WidthRequest="80"
+                    HorizontalOptions="Center"/>
+
+                            <Label Text="Calendario"
+                       Grid.Column="1"
+                       VerticalOptions="Center"
+                       FontSize="18"
+                       FontFamily="ZenDots-Regular.ttf"
+                       TextColor="Black"
+                       HorizontalOptions="Start"/>
+
+                        </Grid>
+                    </Frame>
+
+                </VerticalStackLayout>
+            </ScrollView>
+
+        </Grid>
+    </Grid>
+</ContentPage>
